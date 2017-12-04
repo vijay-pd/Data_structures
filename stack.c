@@ -12,7 +12,7 @@ struct ArrayStack *CreateStack()
         struct ArrayStack *S = (struct ArrayStack *)malloc(sizeof(struct ArrayStack));
         if(!S)
             return NULL;
-        S->capacity = 5;
+        S->capacity = 6;
         S->top = -1;
         S->array = (int *)malloc(S->capacity * sizeof(int));
         if(!S->array)
